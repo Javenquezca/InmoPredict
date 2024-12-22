@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+scikit-learn
+matplotlib
+jinja2
+numpy
+python-multipart
+seaborn
+lightgbm

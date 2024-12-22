@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de la Clasificación</title>
+    <!-- Incluir Tailwind CSS desde el CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-purple-600 to-pink-500 min-h-screen flex items-center justify-center">
+
+    <!-- Contenedor principal -->
+    <div class="w-full max-w-4xl bg-white rounded-lg shadow-xl">
+        <!-- Encabezado -->
+        <div class="bg-gradient-to-r from-purple-700 to-pink-500 text-white py-6 px-4 rounded-t-lg">
+            <h3 class="text-3xl font-extrabold text-center">Resultado de la Clasificación</h3>
+        </div>
+
+        <!-- Contenido -->
+        <div class="p-8 space-y-6">
+            <!-- Mensaje de éxito -->
+            <div class="bg-green-100 border border-green-300 text-green-800 rounded-lg p-6">
+                <h5 class="text-xl font-bold">Clasificación Predicha:</h5>
+                <p class="mt-2 text-2xl font-semibold">{{ prediction }}</p>
+            </div>
+
+            <!-- Gráfico y texto -->
+            <!--<div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
+                <!-- Título del gráfico -->
+                <!--<div class="md:col-span-1">
+                    <h4 class="text-xl font-bold text-gray-700">Gráfico de Dispersión</h4>
+                </div>
+                <!-- Imagen del gráfico -->
+                <!--<div class="md:col-span-3">
+                    <img src="data:image/png;base64,{{ image_base64 }}" alt="Gráfico de Dispersión"
+                        class="rounded-lg shadow-md w-full">
+                </div>
+            </div>
+
+            <!-- Botón para volver -->
+            <div class="text-center">
+                <a href="/iris"
+                    class="bg-gradient-to-r from-purple-600 to-pink-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:from-pink-500 hover:to-purple-600 focus:ring-4 focus:ring-pink-300 focus:ring-offset-2 transition">
+                    Volver a Intentar
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+    

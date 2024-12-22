@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InmoPredict</title>
+    <!-- Incluir Tailwind CSS desde el CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Animación de desvanecimiento */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Animación de deslizamiento */
+        .slide-up {
+            transform: translateY(20px);
+            animation: slideUp 1s ease-out forwards;
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <!-- Header -->
+    <header class="bg-gray-900 text-white p-6">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold fade-in">InmoPredict</h1>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-purple-600 to-pink-500 text-white text-center py-16 slide-up">
+        <div class="container mx-auto">
+            <h2 class="text-5xl font-extrabold mb-4">Soluciones Inteligentes con InmoPredict</h2>
+            <p class="text-lg mb-6">Predicciones inteligentes para el futuro de tus propiedades.</p>
+            <a href="/iris"
+                class="px-6 py-3 bg-white text-purple-600 font-bold rounded-lg shadow-lg hover:bg-purple-600 hover:text-white transition">
+                Ver Más
+            </a>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section class="py-16">
+        <div class="container mx-auto">
+            <h3 class="text-center text-3xl font-semibold mb-12 text-gray-800">Características principales</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg transform transition hover:scale-105 fade-in">
+                    <h4 class="text-xl font-bold mb-2 text-purple-600">Automatización</h4>
+                    <p class="text-gray-600">Optimiza tus procesos operativos mediante InmoPredict.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg transform transition hover:scale-105 fade-in">
+                    <h4 class="text-xl font-bold mb-2 text-purple-600">Procesamiento de Datos</h4>
+                    <p class="text-gray-600">Transforma grandes volúmenes de datos en decisiones precisas.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg transform transition hover:scale-105 fade-in">
+                    <h4 class="text-xl font-bold mb-2 text-purple-600">Predicción</h4>
+                    <p class="text-gray-600">Obtén predicciones y toma decisiones para tus arriendos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-12">
+        <div class="container mx-auto space-y-6">
+            <p class="text-sm opacity-75">&copy; 2024 Proyecto IA. Todos los derechos reservados.</p>
+            <div class="flex justify-center gap-6">
+                <a href="/about" class="text-gray-300 hover:text-white transition">Acerca de</a>
+                <a href="/privacy" class="text-gray-300 hover:text-white transition">Política de Privacidad</a>
+                <a href="/terms" class="text-gray-300 hover:text-white transition">Términos y Condiciones</a>
+            </div>
+            <div class="text-xs opacity-50">
+                <p>Desarrollado por <strong>InmoPredict</strong>. Con tecnología de IA para el futuro de las
+                    propiedades.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

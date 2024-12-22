@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificador Iris</title>
+    <!-- Incluir Tailwind CSS desde el CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-purple-600 to-pink-500 min-h-screen flex items-center justify-center font-sans">
+
+    <!-- Contenedor principal -->
+    <div class="w-full max-w-3xl bg-white rounded-lg shadow-2xl">
+        <!-- Encabezado -->
+        <div class="bg-gradient-to-r from-purple-700 to-pink-500 text-white text-center py-6 rounded-t-lg">
+            <h3 class="text-3xl font-extrabold">Clasificador de Iris</h3>
+            <p class="text-sm mt-1">Predice los valores con precisión y estilo</p>
+        </div>
+
+        <!-- Formulario -->
+        <div class="p-8">
+            <form action="/iris/predict" method="post" class="space-y-6">
+                <!-- Campos de entrada -->
+                <div>
+                    <label for="Ciudad" class="block text-sm font-medium text-gray-700">Ciudad</label>
+                    <input type="text" name="Ciudad" id="Ciudad" required
+                        class="mt-2 block w-full rounded-lg border-gray-300 shadow-sm focus:ring-pink-500 focus:border-pink-500 sm:text-sm">
+                </div>
+
+                <div>
+                    <label for="Barrios" class="block text-sm font-medium text-gray-700">Barrio</label>
+                    <input type="text" name="Barrios" id="Barrios" required
+                        class="mt-2 block w-full rounded-lg border-gray-300 shadow-sm focus:ring-pink-500 focus:border-pink-500 sm:text-sm">
+                </div>
+
+                <div>
+                    <label for="Estrato" class="block text-sm font-medium text-gray-700">Estrato</label>
+                    <input type="number" name="Estrato" id="Estrato" required
+                        class="mt-2 block w-full rounded-lg border-gray-300 shadow-sm focus:ring-pink-500 focus:border-pink-500 sm:text-sm">
+                </div>
+
+                <div>
+                    <label for="Banhos" class="block text-sm font-medium text-gray-700">Baños</label>
+                    <input type="number" name="Banhos" id="Banhos" required
+                        class="mt-2 block w-full rounded-lg border-gray-300 shadow-sm focus:ring-pink-500 focus:border-pink-500 sm:text-sm">
+                </div>
+
+                <div>
+                    <label for="Habitaciones" class="block text-sm font-medium text-gray-700">Habitaciones</label>
+                    <input type="number" name="Habitaciones" id="Habitaciones" required
+                        class="mt-2 block w-full rounded-lg border-gray-300 shadow-sm focus:ring-pink-500 focus:border-pink-500 sm:text-sm">
+                </div>
+
+                <div>
+                    <label for="AreaConstruida" class="block text-sm font-medium text-gray-700">Área Construida</label>
+                    <input type="number" name="AreaConstruida" id="AreaConstruida" required
+                        class="mt-2 block w-full rounded-lg border-gray-300 shadow-sm focus:ring-pink-500 focus:border-pink-500 sm:text-sm">
+                </div>
+
+                <div>
+                    <label for="Piso" class="block text-sm font-medium text-gray-700">Piso</label>
+                    <input type="number" name="Piso" id="Piso" required
+                        class="mt-2 block w-full rounded-lg border-gray-300 shadow-sm focus:ring-pink-500 focus:border-pink-500 sm:text-sm">
+                </div>
+
+                <div>
+                    <label for="Parqueaderos" class="block text-sm font-medium text-gray-700">Parqueaderos</label>
+                    <input type="number" name="Parqueaderos" id="Parqueaderos" required
+                        class="mt-2 block w-full rounded-lg border-gray-300 shadow-sm focus:ring-pink-500 focus:border-pink-500 sm:text-sm">
+                </div>
+
+                <!-- Botón de envío -->
+                <button type="submit"
+                    class="w-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:from-pink-500 hover:to-purple-600 focus:ring-4 focus:ring-pink-300 focus:ring-offset-2 transition">
+                    Clasificar
+                </button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
